@@ -5,7 +5,7 @@ try:
     from gkeepapi import Keep, _node as KeepValues
 except ImportError:
     import os
-    os.system("pip install -r requirements.txt")
+    os.system("pip install click gkeepapi")
 
 import sys
 import sqlite3
