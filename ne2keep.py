@@ -2,7 +2,7 @@
 
 try:
     import click
-    from gkeepapi import Keep, _node as KeepValues
+    import gkeepapi
 except ImportError:
     import os
     os.system("pip install click gkeepapi")
