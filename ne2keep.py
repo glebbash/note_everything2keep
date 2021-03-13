@@ -12,6 +12,7 @@ import sqlite3
 from typing import List
 import click
 from gkeepapi import Keep, _node as KeepValues
+from time import sleep
 
 
 RAW_ITEMS_QUERY = "SELECT _id, title, type, body, folder, sticked, priority FROM Notes"
@@ -109,6 +110,8 @@ def import_items(items: List[Item], keep: Keep):
 
         items_progress.next("Adding items")
         keep.sync()
+        
+        sleep(1)
 
 
 def create_labels(folders: List[FolderItem], keep: Keep):
