@@ -1,6 +1,11 @@
 # note_everything2keep
 NoteEverything to Google Keep export
 
+# prerequisites
+
+* python3
+* pip3
+
 ## usage
 ```bash
 git clone https://github.com/glebbash/note_everything2keep.git
