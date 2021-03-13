@@ -5,7 +5,7 @@ try:
     import gkeepapi
 except ImportError:
     import os
-    os.system("pip install click gkeepapi")
+    os.system("pip3 install click gkeepapi")
 
 import sys
 import sqlite3
